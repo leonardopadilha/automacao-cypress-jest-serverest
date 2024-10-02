@@ -11,6 +11,7 @@ describe('Sign up', () => {
         signUpPage.clickOnRegister()
         signUpPage.register(user)
         signUpPage.submit()
+        signUpPage.haveTextsuccess('Cadastro realizado com sucesso')
 
         cy.findUserId(user)
           .then((response) => {
@@ -36,6 +37,7 @@ describe('Sign up', () => {
         signUpPage.clickOnRegister()
         signUpPage.register(user)
         signUpPage.submit()
+        signUpPage.haveTextsuccess('Cadastro realizado com sucesso')
 
         cy.findUserId(user)
           .then((response) => {

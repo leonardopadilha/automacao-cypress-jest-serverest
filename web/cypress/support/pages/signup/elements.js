@@ -6,5 +6,6 @@ exports.el = {
     email: '[placeholder*=email]',
     password: '#password',
     checkAdmin: '[name=administrador]',
-    btnRegister: '.form button'
+    btnRegister: '.form button',
+    registerSuccess: '.alert-link'
 }

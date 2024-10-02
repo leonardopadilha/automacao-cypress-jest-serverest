@@ -34,6 +34,12 @@ class SignUpPage {
         cy.get(el.btnRegister)
             .click()
     }
+
+    haveTextsuccess(text) {
+        cy.get(el.registerSuccess)
+            .should('be.visible')
+            .contains(text)
+    }
 }
 
 export default new SignUpPage()
